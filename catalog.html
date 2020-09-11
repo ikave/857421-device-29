@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" width="163" height="35" alt="Логотип интернет-магазина Device">
+        </a>
+        <!-- Пока оставлю только input -->
+        <input type="text" name="search" placeholder="Поиск по сайту">
+
+        <ul class="user-nav">
+          <li class="user-nav-item">
+            <a href="" class="login">Войти</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="" class="compare">Сравнить</a>
+          </li>
+          <li>
+            <a href="" class="card">Корзина</a>
+          </li>
+        </ul>
+
+        <a href="" class="catalog-menu">Каталог товаров</a>
+        <ul class="catalog-nav">
+          <li class="catalog-nav-item">
+            <a href="">Виртуальная реальность</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Моноподы для селфи</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Экшн-камеры</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Фитнес-браслеты</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Умные часы</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Квадрокоптер</a>
+          </li>
+        </ul>
+
+        <ul class="site-nav">
+          <li class="site-nav-item">
+            <a href="">Доставка</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="">Гарантия</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="">Каталог товаров</a>
+        </li>
+        <li>Моноподы для селфи</li>
+      </ul>
+
+      <section class="filters">
+        <h2>Фильтр:</h2>
+        <!-- Форма -->
+      </section>
+
+      <section class="catalog">
+        <h2>Каталог товаров: Моноподы</h2>
+        <section class="sort">
+          <h3>Сортировка:</h3>
+          <ul class="sort-list">
+            <li class="sort-list-item">
+              <a href="">По цене</a>
+            </li>
+            <li class="sort-list-item">
+              <a href="">По типу</a>
+            </li>
+            <li class="sort-list-item">
+              <a href="">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sort-type">
+            <li class="sort-type-item">
+              <a href="">По возрастанию</a>
+            </li>
+            <li class="sort-type-item">
+              <a href="">По убыванию</a>
+            </li>
+          </ul>
+        </section>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <p>
+              <a href="">Любительская селфи-палка</a>
+              <span>500 руб.</span>
+            </p>
+            <img src="img/image360x380.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+          </li>
+          <li class="catalog-item">
+            <p>
+              <a href="">Профессиональная селфи-палка</a>
+              <span>1 500 руб.</span>
+            </p>
+            <img src="img/image360x380.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+          </li>
+          <li class="catalog-item">
+            <p>
+              <a href="">Непотопляемая селфи-палка</a>
+              <span>2 500 руб.</span>
+            </p>
+            <img src="img/image360x380.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+          </li>
+          <li class="catalog-item">
+            <p>
+              <a href="">Селфи-палка «Следуй за мной»</a>
+              <span>4 900 руб.</span>
+            </p>
+            <img src="img/image360x380.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+          </li>
+        </ul>
+        <!--
+          Не уверен считается ли такая разметка правильной
+          с точки зрения логики, где кнопки рядом с ссылками?
+         -->
+        <ul class="pagination">
+          <li class="pagination-item">
+            <button type="button">Назад</button>
+          </li>
+          <li class="pagination-item">
+            <a href="">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="">3</a>
+          </li>
+          <li class="pagination-item">
+            <button type="button">Вперед</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <a class="footer-logo">
+          <img src="img/footer-logo.png" width="163" height="35" alt="Логотип интернет-магазина Device">
+        </a>
+        <ul class="user-nav">
+          <li class="user-nav-item">
+            <a href="" class="login">Войти</a>
+          </li>
+        </ul>
+        <a href="" class="compare">Сравнить</a>
+        <a href="" class="card">Корзина</a>
+      </div>
+      <div class="footer-middle">
+        <p>г. Москва, ул. Строителей, 15
+        </p>
+        <ul class="footer-site-nav">
+          <li class="footer-site-nav-item">
+            <a href="">Доставка</a>
+          </li>
+          <li class="footer-site-nav-item">
+            <a href="">Гарантия</a>
+          </li>
+          <li class="footer-site-nav-item">
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-bottom">
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a href="">Facebook</a>
+          </li>
+          <li class="socials-item">
+            <a href="">Instagram</a>
+          </li>
+          <li class="socials-item">
+            <a href="">Twitter</a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy27x34.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
