@@ -5,8 +5,298 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <a class="logo">
+          <img src="img/logo.png" width="163" height="35" alt="Логотип интернет-магазина Device">
+        </a>
+        <!-- Пока оставлю только input -->
+        <input type="text" name="search" placeholder="Поиск по сайту">
+        <!--
+          Пользовательское меню должно сразу содержать все элементы
+           - Войти
+           - Пользователь
+           - Выйти
+          или они динамически добавятся при успешном логине?
+        -->
+        <ul class="user-nav">
+          <li class="user-nav-item">
+            <a href="" class="login">Войти</a>
+          </li>
+        </ul>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+        <!-- Не могу сообразить, можно ли обернуть эти элементы в список? -->
+        <a href="" class="compare">Сравнить</a>
+        <a href="" class="card">Корзина</a>
 
+        <!--
+          Есть вопрос по структуре меню каталога.
+          Сейчас это список, но как добиться размещения как на макете?
+          С помощью флексов без дополнительных оберток не обойтись. На гридах
+          получится добиться размещения как на макете?
+        -->
+        <a href="" class="catalog-menu">Каталог товаров</a>
+        <ul class="catalog-nav">
+          <li class="catalog-nav-item">
+            <a href="">Виртуальная реальность</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Моноподы для селфи</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Экшн-камеры</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Фитнес-браслеты</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Умные часы</a>
+          </li>
+          <li class="catalog-nav-item">
+            <a href="">Квадрокоптер</a>
+          </li>
+        </ul>
+
+        <ul class="site-nav">
+          <li class="site-nav-item">
+            <a href="">Доставка</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="">Гарантия</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Интернет-магазин современных гаджетов Device</h1>
+      <section class="promo">
+        <h2>Лучшие предложения и Акции</h2>
+        <!-- Элементы управления слайдером пока не стал размечать -->
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3>Селфи палка</h3>
+            <img src="img/image384x486.png" width="384" height="486" alt="Селфи палка">
+            <p>Делай селфи,<br> как Бен Стиллер!</p>
+            <p>Самая длинная палка для селфи доступна в нашем магазине.
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <a href="">Подробнее</a>
+            <!-- Вопрос. Что здесь подойдет лучше table или dl? -->
+            <dl>
+              <dt>8,5 м</dt><dd>Длина палки</dd>
+              <dt>5 кг</dt><dd>Вес палки</dd>
+              <dt>Карбон</dt><dd>Материал</dd>
+            </dl>
+          </li>
+          <li class="slider-item">
+            <h3>Фитнес браслет</h3>
+            <img src="img/image345x485.png" width="345" height="485" alt="Фитнес браслет">
+            <p>Худеем<br> правильно!</p>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+              не пропускать занятия и соблюдать диету.
+            </p>
+            <a href="">Подробнее</a>
+            <dl>
+              <dt>48 часов</dt><dd>Без подзарядки</dd>
+            </dl>
+          </li>
+          <li class="slider-item">
+            <h3>Квадрокоптер</h3>
+            <img src="img/image526x334.png" width="526" height="334" alt="Квадрокоптер">
+            <p>Порхает как бабочка,<br> жалит как пчела!</p>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+              мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a href="">Подробнее</a>
+            <dl>
+              <dt>800 м</dt><dd>Дальность полета</dd>
+              <dt>50 м</dt><dd>Радиус поражения</dd>
+            </dl>
+          </li>
+        </ul>
+      </section>
+      <section class="categories">
+        <h2>Категории товаров</h2>
+        <ul class="categories-list">
+          <li class="categories-item">
+            <a href="">
+              <h3>Виртуальная
+                реальность</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <h3>Моноподы
+                для селфи</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <h3>Экшн-камеры</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <h3>Фитнес-браслеты</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <h3>Умные часы</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <h3>Квадрокоптеры</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <h2>Услуги</h2>
+        <ul class="services-control">
+          <li class="services-control-item">
+            <a href="">Доставка</a>
+          </li>
+          <li class="services-control-item">
+            <a href="">Гарантия</a>
+          </li>
+          <li class="services-control-item">
+            <a href="">Кредит</a>
+          </li>
+        </ul>
+        <ul class="slider services-slider">
+          <li class="services-slider-item">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему
+              подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="services-slider-item">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
+              не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.</p>
+          </li>
+          <li class="services-slider-item">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты
+              подберут для вас наиболее выгодные<br>
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="brands">
+        <h2>Бренды</h2>
+        <ul class="brands-list">
+          <li class="brands-item">
+            <a href="">
+              <img src="img/image260x100.png" width="260" height="100" alt="DJI">
+            </a>
+          </li>
+          <li class="brands-item">
+            <a href="">
+              <img src="img/image260x100.png" width="260" height="100" alt="SP Gadgets">
+            </a>
+          </li>
+          <li class="brands-item">
+            <a href="">
+              <img src="img/image260x100.png" width="260" height="100" alt="GoPro">
+            </a>
+          </li>
+          <li class="brands-item">
+            <a href="">
+              <img src="img/image260x100.png" width="260" height="100" alt="Vive">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика,
+          который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки
+          России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="delivery-list">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="">Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.</p>
+        <img src="img/map510x56.jpg" width="510" height="56" alt="г. Москва, ул. Строителей, 15">
+        <a href="">Напишите нам</a>
+      </section>
+    </main>
+    <footer>
+      <!--
+        Решил разбить футер построчно,
+        и использовать простые div
+        мне показалось что section-ы здесь избыточны
+       -->
+      <div class="footer-top">
+        <a class="footer-logo">
+          <img src="img/footer-logo.png" width="163" height="35" alt="Логотип интернет-магазина Device">
+        </a>
+        <ul class="user-nav">
+          <li class="user-nav-item">
+            <a href="" class="login">Войти</a>
+          </li>
+        </ul>
+        <a href="" class="compare">Сравнить</a>
+        <a href="" class="card">Корзина</a>
+      </div>
+      <div class="footer-middle">
+        <p>г. Москва, ул. Строителей, 15
+        </p>
+        <ul class="footer-site-nav">
+          <li class="footer-site-nav-item">
+            <a href="">Доставка</a>
+          </li>
+          <li class="footer-site-nav-item">
+            <a href="">Гарантия</a>
+          </li>
+          <li class="footer-site-nav-item">
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-bottom">
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a href="">Facebook</a>
+          </li>
+          <li class="socials-item">
+            <a href="">Instagram</a>
+          </li>
+          <li class="socials-item">
+            <a href="">Twitter</a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy27x34.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
+
+    <section class="modal modal-map">
+      <h2>Как нас найти</h2>
+      <img src="img/map994x593.jpg" width="994" height="593" alt="г. Москва, ул. Строителей, 15">
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-feedback">
+      <h2>Форма обратной связи</h2>
+      <!-- Форма -->
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
