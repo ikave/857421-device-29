@@ -121,6 +121,35 @@ img {
   color: var(--basic-black);
 }
 
+.user-nav a,
+.site-actions a,
+.catalog-nav a {
+  color: var(--basic-black);
+}
+
+
+/* Какой-то очень сложный блок, мне так не нравится) */
+.catalog-menu:hover,
+.catalog-menu:focus,
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus,
+.site-actions a:hover,
+.site-actions a:focus,
+.catalog-nav a:hover,
+.catalog-nav a:focus {
+  opacity: 0.6;
+}
+
+.catalog-menu:active,
+.site-nav a:active,
+.user-nav a:active,
+.site-actions a:active,
+.catalog-nav a:active {
+  opacity: 0.3;
+}
+
 /* Promo */
 
 .slider-list {
