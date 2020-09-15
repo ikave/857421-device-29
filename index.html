@@ -5,8 +5,8 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="main-header">
+      <nav class="main-navigation">
         <a class="logo">
           <img src="img/logo.png" width="163" height="35" alt="Логотип интернет-магазина Device">
         </a>
@@ -19,12 +19,12 @@
           </li>
         </ul>
 
-        <ul>
-          <li>
+        <ul class="site-actions">
+          <li class="site-actions-item">
             <a href="" class="compare">Сравнить</a>
           </li>
-          <li>
-            <a href="" class="card">Корзина</a>
+          <li class="site-actions-item">
+            <a href="" class="cart">Корзина</a>
           </li>
         </ul>
 
@@ -63,8 +63,8 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Интернет-магазин современных гаджетов Device</h1>
+    <main class="main">
+      <h1 class="visually-hidden">Интернет-магазин современных гаджетов Device</h1>
       <section class="promo">
         <h2>Лучшие предложения и Акции</h2>
         <!-- Элементы управления слайдером пока не стал размечать -->
@@ -76,8 +76,7 @@
             <p>Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a href="">Подробнее</a>
-
+            <a class="button" href="">Подробнее</a>
             <table class="param">
               <tr>
                 <td>Длина палки</td>
@@ -100,7 +99,7 @@
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.
             </p>
-            <a href="">Подробнее</a>
+            <a class="button" href="">Подробнее</a>
             <table class="param">
               <tr>
                 <td>Без подзарядки</td>
@@ -115,7 +114,7 @@
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.
             </p>
-            <a href="">Подробнее</a>
+            <a class="button" href="">Подробнее</a>
             <table class="param">
               <tr>
                 <td>Дальность полета</td>
@@ -130,53 +129,51 @@
         </ul>
       </section>
       <section class="categories">
-        <h2>Категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-list">
           <li class="categories-item">
-            <a href="">
-              <h3>Виртуальная
-                реальность</h3>
-            </a>
+            <h3>
+              <a href="">Виртуальная реальность</a>
+            </h3>
           </li>
           <li class="categories-item">
-            <a href="">
-              <h3>Моноподы
-                для селфи</h3>
-            </a>
+            <h3>
+              <a href="">Моноподы для селфи</a>
+            </h3>
           </li>
           <li class="categories-item">
-            <a href="">
-              <h3>Экшн-камеры</h3>
-            </a>
+            <h3>
+              <a href="">Экшн-камеры</a>
+            </h3>
           </li>
           <li class="categories-item">
-            <a href="">
-              <h3>Фитнес-браслеты</h3>
-            </a>
+            <h3>
+              <a href="">Фитнес-браслеты</a>
+            </h3>
           </li>
           <li class="categories-item">
-            <a href="">
-              <h3>Умные часы</h3>
-            </a>
+            <h3>
+              <a href="">Умные часы</a>
+            </h3>
           </li>
           <li class="categories-item">
-            <a href="">
-              <h3>Квадрокоптеры</h3>
-            </a>
+            <h3>
+              <a href="">Квадрокоптеры</a>
+            </h3>
           </li>
         </ul>
       </section>
       <section class="services">
-        <h2>Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-control">
           <li class="services-control-item">
-            <a href="">Доставка</a>
+            <a class="button button-active" href="">Доставка</a>
           </li>
           <li class="services-control-item">
-            <a href="">Гарантия</a>
+            <a class="button" href="">Гарантия</a>
           </li>
           <li class="services-control-item">
-            <a href="">Кредит</a>
+            <a class="button" href="">Кредит</a>
           </li>
         </ul>
         <ul class="slider services-slider">
@@ -201,7 +198,7 @@
         </ul>
       </section>
       <section class="brands">
-        <h2>Бренды</h2>
+        <h2 class="visually-hidden">Бренды</h2>
         <ul class="brands-list">
           <li class="brands-item">
             <a href="">
@@ -232,18 +229,18 @@
         <p>Мы можем доставить ваш товар в самые отдаленные точки
           России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="delivery-list">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+          <li class="delivery-list-item">Деловые линии</li>
+          <li class="delivery-list-item">Автотрейдинг</li>
+          <li class="delivery-list-item">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="">Подробнее о нас</a>
+        <a class="button" href="">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/map510x56.jpg" width="510" height="56" alt="г. Москва, ул. Строителей, 15">
-        <a href="">Напишите нам</a>
+        <a class="button" href="">Напишите нам</a>
       </section>
     </main>
     <footer>
@@ -256,8 +253,14 @@
             <a href="" class="login">Войти</a>
           </li>
         </ul>
-        <a href="" class="compare">Сравнить</a>
-        <a href="" class="card">Корзина</a>
+        <ul class="site-actions">
+          <li class="site-actions-item">
+            <a href="" class="compare">Сравнить</a>
+          </li>
+          <li class="site-actions-item">
+            <a href="" class="cart">Корзина</a>
+          </li>
+        </ul>
       </div>
       <div class="footer-middle">
         <p>г. Москва, ул. Строителей, 15
@@ -294,13 +297,13 @@
     </footer>
 
     <section class="modal modal-map">
-      <h2>Как нас найти</h2>
+      <h2 class="visually-hidden">Как нас найти</h2>
       <img src="img/map994x593.jpg" width="994" height="593" alt="г. Москва, ул. Строителей, 15">
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-feedback">
-      <h2>Форма обратной связи</h2>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <!-- Форма -->
       <button class="modal-close" type="button">Закрыть</button>
     </section>
