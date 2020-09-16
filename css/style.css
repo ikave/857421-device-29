@@ -96,6 +96,14 @@ img {
   cursor: pointer;
 }
 
+.button:active {
+  color: var(--basic-black-light);
+}
+
+.button-active {
+  color: var(--main-color);
+}
+
 /* Main-navigation */
 
 .main-navigation {
@@ -195,6 +203,10 @@ img {
   color: var(--basic-black);
 }
 
+.categories-list a:active {
+  color: var(--basic-black-light);
+}
+
 /* Services */
 
 .services-control,
@@ -202,6 +214,10 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.services-control a:active {
+  color: var(--main-color);
 }
 
 .services-slider-item h3 {
@@ -282,10 +298,37 @@ img {
 }
 
 .footer-user-nav a,
-.footer-site-actions a,
+.footer-site-actions a {
+  color: var(--basic-white-light);
+}
+
+.footer-user-nav a:hover,
+.footer-user-nav a:focus,
+.footer-site-actions a:hover,
+.footer-site-actions a:focus {
+  color: var(--basic-white);
+}
+
+.footer-site-actions a:active,
+.footer-site-actions a:active {
+  color: var(--basic-white-dark);
+}
+
 .footer-site-nav a,
 .socials-list a {
   color: var(--basic-white);
+}
+
+.footer-site-nav a:hover,
+.footer-site-nav a:focus,
+.socials-list a:hover,
+.socials-list a:focus {
+  color: var(--basic-white-light);
+}
+
+.footer-site-nav a:active,
+.socials-list a:active {
+  color: var(--basic-white-dark);
 }
 
 .footer-site-nav a {
