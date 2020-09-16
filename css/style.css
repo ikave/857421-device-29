@@ -337,3 +337,184 @@ img {
   font-size: 18px;
   text-transform: uppercase;
 }
+
+
+/* CATALOG */
+
+
+.main-title {
+  font-family: var(--second-font);
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.breadcrumbs a[href]:hover,
+.breadcrumbs a[href]:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs a[href]:active {
+  opacity: 0.1;
+}
+
+/* Filters */
+
+.filters {
+  background-color: var(--basic-gray);
+}
+
+.filters h2 {
+  font-family: var(--second-font);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Catalog */
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item-description {
+  font-family: var(--second-font);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.catalog-item-description a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+.catalog-item-compare {
+  font: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.catalog-item-compare:hover,
+.catalog-item-compare:focus {
+  opacity: 1;
+}
+
+.catalog-item-compare:active {
+  opacity: 0.2;
+}
+
+/* Sort */
+
+.sort {
+  background-color: var(--basic-gray);
+}
+
+.sort h3 {
+  font-family: var(--second-font);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.sort-list,
+.sort-type {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort-list-link,
+.sort-type-link {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.sort-list-link:hover,
+.sort-list-link:focus,
+.sort-type-link:hover,
+.sort-type-link:focus {
+  opacity: 0.6;
+}
+
+.sort-list-link:active,
+.sort-type-link:active {
+  opacity: 1;
+}
+
+.sort-list-link-active,
+.sort-type-link-active {
+  opacity: 1;
+}
+
+/* Pagination */
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-button,
+.pagination-link {
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/* Временно задам цвет вне переменной */
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-button:active {
+  background-color: #d9d9d9;
+  color: var(--basic-black-light);
+}
+
+.pagination-link {
+  opacity: 0.3;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  opacity: 0.6;
+}
+
+.pagination-link:active,
+.pagination-link-active {
+  opacity: 1;
+}
