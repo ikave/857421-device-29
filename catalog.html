@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="logo">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="logo" href="index.html">
           <img src="img/logo.png" width="163" height="35" alt="Логотип интернет-магазина Device">
         </a>
         <!-- Пока оставлю только input -->
@@ -19,12 +21,12 @@
           </li>
         </ul>
 
-        <ul>
-          <li>
+        <ul class="site-actions">
+          <li class="site-actions-item">
             <a href="" class="compare">Сравнить</a>
           </li>
-          <li>
-            <a href="" class="card">Корзина</a>
+          <li class="site-actions-item">
+            <a href="" class="cart">Корзина</a>
           </li>
         </ul>
 
@@ -63,16 +65,18 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Моноподы для селфи</h1>
+    <main class="main">
+      <h1 class="main-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-        <li>
+        <li class="breadcrumbs-item">
           <a href="index.html">Главная</a>
         </li>
-        <li>
+        <li class="breadcrumbs-item">
           <a href="">Каталог товаров</a>
         </li>
-        <li>Моноподы для селфи</li>
+        <li class="breadcrumbs-item">
+          <a>Моноподы для селфи</a>
+        </li>
       </ul>
 
       <section class="filters">
@@ -81,102 +85,105 @@
       </section>
 
       <section class="catalog">
-        <h2>Каталог товаров: Моноподы</h2>
+        <h2 class="visually-hidden">Каталог товаров: Моноподы</h2>
         <section class="sort">
           <h3>Сортировка:</h3>
           <ul class="sort-list">
             <li class="sort-list-item">
-              <a href="">По цене</a>
+              <a class="sort-list-link sort-list-link-active" href="">По цене</a>
             </li>
             <li class="sort-list-item">
-              <a href="">По типу</a>
+              <a class="sort-list-link" href="">По типу</a>
             </li>
             <li class="sort-list-item">
-              <a href="">По популярности</a>
+              <a class="sort-list-link" href="">По популярности</a>
             </li>
           </ul>
           <ul class="sort-type">
             <li class="sort-type-item">
-              <a href="">По возрастанию</a>
+              <a class="sort-type-link" href="">По возрастанию</a>
             </li>
             <li class="sort-type-item">
-              <a href="">По убыванию</a>
+              <a class="sort-type-link sort-type-link-active" href="">По убыванию</a>
             </li>
           </ul>
         </section>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-description">
               <a href="">Любительская селфи-палка</a>
               <span>500 руб.</span>
             </p>
             <img src="img/image360x380.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button" type="button">В корзину</button>
+            <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
           </li>
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-description">
               <a href="">Профессиональная селфи-палка</a>
               <span>1 500 руб.</span>
             </p>
             <img src="img/image360x380.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button" type="button">В корзину</button>
+            <button  class="catalog-item-compare" type="button">Добавить к сравнению</button>
           </li>
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-description">
               <a href="">Непотопляемая селфи-палка</a>
               <span>2 500 руб.</span>
             </p>
             <img src="img/image360x380.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button" type="button">В корзину</button>
+            <button  class="catalog-item-compare" type="button">Добавить к сравнению</button>
           </li>
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-description">
               <a href="">Селфи-палка «Следуй за мной»</a>
               <span>4 900 руб.</span>
             </p>
             <img src="img/image360x380.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button" type="button">В корзину</button>
+            <button  class="catalog-item-compare" type="button">Добавить к сравнению</button>
           </li>
         </ul>
-        <!--
-          Не уверен считается ли такая разметка правильной
-          с точки зрения логики, где кнопки рядом с ссылками?
-         -->
+
         <ul class="pagination">
           <li class="pagination-item">
-            <button type="button">Назад</button>
+            <a class="pagination-button" href="">Назад</a>
           </li>
           <li class="pagination-item">
-            <a href="">1</a>
+            <a class="pagination-link pagination-link-active" href="">1</a>
           </li>
           <li class="pagination-item">
-            <a href="">2</a>
+            <a class="pagination-link" href="">2</a>
           </li>
           <li class="pagination-item">
-            <a href="">3</a>
+            <a class="pagination-link" href="">3</a>
           </li>
           <li class="pagination-item">
-            <button type="button">Вперед</button>
+            <a class="pagination-button" href="">Вперед</a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="footer-top">
         <a class="footer-logo">
           <img src="img/footer-logo.png" width="163" height="35" alt="Логотип интернет-магазина Device">
         </a>
-        <ul class="user-nav">
-          <li class="user-nav-item">
+        <ul class="footer-user-nav">
+          <li class="footer-user-nav-item">
             <a href="" class="login">Войти</a>
           </li>
         </ul>
-        <a href="" class="compare">Сравнить</a>
-        <a href="" class="card">Корзина</a>
+        <ul class="footer-site-actions">
+          <li class="footer-site-actions-item">
+            <a href="" class="compare">Сравнить</a>
+          </li>
+          <li class="footer-site-actions-item">
+            <a href="" class="cart">Корзина</a>
+          </li>
+        </ul>
       </div>
       <div class="footer-middle">
         <p>г. Москва, ул. Строителей, 15
