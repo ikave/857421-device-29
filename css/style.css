@@ -135,43 +135,84 @@ img {
 /* Main-navigation */
 
 .main-navigation {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(4, auto); */
+  margin-top: 40px;
+  padding: 0 60px;
   background-color: var(--main-color);
 }
 
-.logo-wrapper {
-  grid-area: 1 / 1 / 2 / 3;
+.main-navigation-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.main-navigation-search {
-  grid-area: 2 / 1 / 3 / 2;
+.logo {
+  position: relative;
+  top: -20px;
+  margin-bottom: 29px;
 }
 
 .site-wrapper {
-  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
-.catalog-menu {
-  grid-area: 3 / 1 / 4 / 2;
+.search-form {
+  width: 50%;
+}
+
+.catalog-menu-wrapper {
+  width: 50%;
 }
 
 .catalog-nav {
-  grid-area: 4 / 1 / 5 / 2;
+  width: 50%;
 }
 
 .site-nav {
-  grid-area: 3 / 2 / 4 / 3;
+  width: 50%;
+}
+
+.site-nav-item {
+  margin-right: 38px;
+}
+
+.site-nav-item:last-child {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .user-nav,
 .site-actions,
 .catalog-nav,
 .site-nav {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.user-nav-item a {
+  position: relative;
+  padding-left: 24px;
+}
+
+.site-actions-item {
+  margin-right: 41px;
+}
+
+.site-actions-item:last-child {
+  margin-right: 0;
+}
+
+.site-actions-item a {
+  position: relative;
+  padding-left: 24px;
 }
 
 .catalog-menu,
@@ -181,6 +222,7 @@ img {
   font-size: 18px;
   text-transform: uppercase;
   line-height: 1.2;
+  letter-spacing: 0.2em;
   color: var(--basic-black);
 }
 
@@ -250,6 +292,15 @@ img {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
+}
+
+.slider-item-param tbody {
+  display: flex;
+}
+
+.slider-item-param tr {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .slider-item-param-header {
@@ -398,10 +449,15 @@ img {
   grid-template-rows: repeat(3, auto);
 }
 
+.footer-site-wrapper {
+  display: flex;
+}
+
 .footer-user-nav,
 .footer-site-actions,
 .footer-site-nav,
 .socials-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -507,7 +563,7 @@ img {
     "filter catalog"
     "filter pagination";
   grid-template-columns: 320px 2fr;
-  grid-template-rows: 80px 1fr auto;
+  grid-template-rows: auto 1fr auto;
 }
 
 .filters {
