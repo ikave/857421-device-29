@@ -447,6 +447,28 @@ img {
 .footer-wrapper {
   display: grid;
   grid-template-rows: repeat(3, auto);
+  padding-top: 46px;
+  padding-bottom: 64px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 66px;
+}
+
+.footer-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-site-wrapper {
@@ -461,6 +483,36 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-user-nav {
+  margin-right: 38px;
+}
+
+.footer-user-nav .login {
+  position: relative;
+  padding-left: 24px;
+}
+
+.footer-site-actions-item {
+  margin-right: 40px;
+}
+
+.footer-site-actions-item:last-child {
+  margin-right: 0;
+}
+
+.footer-site-actions-item a {
+  position: relative;
+  padding-left: 24px;
+}
+
+.footer-site-nav-item {
+  margin-right: 36px;
+}
+
+.footer-site-nav-item:last-child {
+  margin-right: 0;
 }
 
 .footer-user-nav a,
@@ -501,6 +553,7 @@ img {
   font-family: var(--second-font);
   font-weight: 800;
   font-size: 18px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
