@@ -500,7 +500,24 @@ img {
 
 /* Catalog */
 
+.catalog {
+  display: grid;
+  grid-template-areas:
+    "filter sort"
+    "filter catalog"
+    "filter pagination";
+  grid-template-columns: 320px 2fr;
+  grid-template-rows: 80px 1fr auto;
+}
+
+.filters {
+  grid-area: filter;
+}
+
 .catalog-list {
+  display: grid;
+  grid-area: catalog;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -541,6 +558,7 @@ img {
 /* Sort */
 
 .sort {
+  grid-area: sort;
   background-color: var(--basic-gray);
 }
 
@@ -588,6 +606,7 @@ img {
 /* Pagination */
 
 .pagination {
+  grid-area: pagination;
   margin: 0;
   padding: 0;
   list-style: none;
