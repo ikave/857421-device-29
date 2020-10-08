@@ -9,32 +9,46 @@
   <body>
     <header class="main-header container">
       <nav class="main-navigation">
-        <div class="logo-wrapper">
-          <a class="logo" href="index.html">
-            <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
-          </a>
-        </div>
-        <!-- Пока оставлю только input -->
-        <input class="main-navigation-search" type="text" name="search" placeholder="Поиск по сайту">
+        <a class="logo" href="index.html">
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+        </a>
+        <div class="main-navigation-row">
+          <form action="" class="search-form">
+            <input class="main-navigation-search" type="text" name="search" placeholder="Поиск по сайту">
+          </form>
+          <div class="site-wrapper">
+            <ul class="user-nav">
+              <li class="user-nav-item">
+                <a href="" class="login">Войти</a>
+              </li>
+            </ul>
 
-        <div class="site-wrapper">
-          <ul class="user-nav">
-            <li class="user-nav-item">
-              <a href="" class="login">Войти</a>
+            <ul class="site-actions">
+              <li class="site-actions-item">
+                <a href="" class="compare">Сравнить</a>
+              </li>
+              <li class="site-actions-item">
+                <a href="" class="cart">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-navigation-row">
+          <div class="catalog-menu-wrapper">
+            <a href="" class="catalog-menu">Каталог товаров</a>
+          </div>
+          <ul class="site-nav">
+            <li class="site-nav-item">
+              <a href="">Доставка</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="">Гарантия</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="">Контакты</a>
             </li>
           </ul>
-
-          <ul class="site-actions">
-            <li class="site-actions-item">
-              <a href="" class="compare">Сравнить</a>
-            </li>
-            <li class="site-actions-item">
-              <a href="" class="cart">Корзина</a>
-            </li>
-          </ul>
         </div>
-
-        <a href="" class="catalog-menu">Каталог товаров</a>
         <ul class="catalog-nav">
           <li class="catalog-nav-item">
             <a href="">Виртуальная реальность</a>
@@ -53,18 +67,6 @@
           </li>
           <li class="catalog-nav-item">
             <a href="">Квадрокоптер</a>
-          </li>
-        </ul>
-
-        <ul class="site-nav">
-          <li class="site-nav-item">
-            <a href="">Доставка</a>
-          </li>
-          <li class="site-nav-item">
-            <a href="">Гарантия</a>
-          </li>
-          <li class="site-nav-item">
-            <a href="">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -121,8 +123,10 @@
                 <span>500 руб.</span>
               </p>
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              <button class="button" type="button">В корзину</button>
-              <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
+              <div class="catalog-item-actions">
+                <button class="button" type="button">В корзину</button>
+                <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
+              </div>
             </li>
             <li class="catalog-item">
               <p class="catalog-item-description">
@@ -130,8 +134,10 @@
                 <span>1 500 руб.</span>
               </p>
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
-              <button class="button" type="button">В корзину</button>
-              <button  class="catalog-item-compare" type="button">Добавить к сравнению</button>
+              <div class="catalog-item-actions">
+                <button class="button" type="button">В корзину</button>
+                <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
+              </div>
             </li>
             <li class="catalog-item">
               <p class="catalog-item-description">
@@ -139,8 +145,10 @@
                 <span>2 500 руб.</span>
               </p>
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <button class="button" type="button">В корзину</button>
-              <button  class="catalog-item-compare" type="button">Добавить к сравнению</button>
+              <div class="catalog-item-actions">
+                <button class="button" type="button">В корзину</button>
+                <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
+              </div>
             </li>
             <li class="catalog-item">
               <p class="catalog-item-description">
@@ -148,8 +156,10 @@
                 <span>4 900 руб.</span>
               </p>
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              <button class="button" type="button">В корзину</button>
-              <button  class="catalog-item-compare" type="button">Добавить к сравнению</button>
+              <div class="catalog-item-actions">
+                <button class="button" type="button">В корзину</button>
+                <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
+              </div>
             </li>
           </ul>
           <ul class="pagination">
@@ -178,19 +188,21 @@
           <a class="footer-logo">
             <img src="img/footer-logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
           </a>
-          <ul class="footer-user-nav">
-            <li class="footer-user-nav-item">
-              <a href="" class="login">Войти</a>
-            </li>
-          </ul>
-          <ul class="footer-site-actions">
-            <li class="footer-site-actions-item">
-              <a href="" class="compare">Сравнить</a>
-            </li>
-            <li class="footer-site-actions-item">
-              <a href="" class="cart">Корзина</a>
-            </li>
-          </ul>
+          <div class="footer-site-wrapper">
+            <ul class="footer-user-nav">
+              <li class="footer-user-nav-item">
+                <a href="" class="login">Войти</a>
+              </li>
+            </ul>
+            <ul class="footer-site-actions">
+              <li class="footer-site-actions-item">
+                <a href="" class="compare">Сравнить</a>
+              </li>
+              <li class="footer-site-actions-item">
+                <a href="" class="cart">Корзина</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-middle">
           <p>г. Москва, ул. Строителей, 15
