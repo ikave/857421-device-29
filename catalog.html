@@ -104,52 +104,68 @@
           <h2 class="visually-hidden">Каталог товаров: Моноподы</h2>
           <section class="filters">
             <div class="filter-title-wrapper">
-              <h2>Фильтр:</h2>
+              <h2 class="filter-title">Фильтр:</h2>
             </div>
-            <form action="" class="filter-form">
-              <fieldset class="filter-range">
-                <legend>Стоимость</legend>
-                <input type="range">
-              </fieldset>
-              <fieldset class="filter-color">
-                <legend>Цвет</legend>
-                <ul class="filter-color-list">
-                  <li class="filter-color-item">
-                    <label>Черный</label>
-                    <input class="visually-hidden" name="filter-color-black" type="checkbox">
-                  </li>
-                  <li class="filter-color-item">
-                    <label>Белый</label>
-                    <input class="visually-hidden" name="filter-color-white" type="checkbox">
-                  </li>
-                  <li class="filter-color-item">
-                    <label>Синий</label>
-                    <input class="visually-hidden" name="filter-color-blue" type="checkbox">
-                  </li>
-                  <li class="filter-color-item">
-                    <label>Красный</label>
-                    <input class="visually-hidden" name="filter-color-red" type="checkbox">
-                  </li>
-                  <li class="filter-color-item">
-                    <label>Розовый</label>
-                    <input class="visually-hidden" name="filter-color-pink" type="checkbox">
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="filter-bluetooth">
-                <legend>Bluetooth</legend>
-                <ul class="filter-bluetooth-list">
-                  <li>
-                    <label for="">Есть</label>
-                    <input class="visually-hidden" type="radio" name="filter-bluetooth">
-                  </li>
-                  <li>
-                    <label for="">Нет</label>
-                    <input class="visually-hidden" type="radio" name="filter-bluetooth">
-                  </li>
-                </ul>
-              </fieldset>
-            </form>
+            <div class="filter-form-wrapper">
+              <form class="filter-form" action="https://echo.htmlacademy.ru/" method="POST">
+                <fieldset class="filter-group filter-range">
+                  <legend class="filter-legend">Стоимость</legend>
+                  <div class="filter-range-line">
+                    <button class="filter-range-button filter-range-button-min"></button>
+                    <button class="filter-range-button filter-range-button-max"></button>
+                  </div>
+                  <ul class="filter-range-list">
+                    <li class="filter-range-item">
+                      <label class="filter-range-label" for="filter-range-input-min">от</label>
+                      <input class="filter-range-input filter-range-input-min" id="filter-range-input-min" type="text" value="0">
+                    </li>
+                    <li class="filter-range-item">
+                      <label class="filter-range-label" for="filter-range-input-max">до</label>
+                      <input class="filter-range-input filter-range-input-max" id="filter-range-input-max" type="text" value="5000">
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter-group filter-color">
+                  <legend class="filter-legend">Цвет</legend>
+                  <ul class="filter-list filter-color-list">
+                    <li class="filter-list-item">
+                      <input class="filter-checkbox-input visually-hidden" id="filter-color-black" name="filter-color-black" type="checkbox" checked>
+                      <label class="checkbox-indicator" for="filter-color-black">Черный</label>
+                    </li>
+                    <li class="filter-list-item">
+                      <input class="filter-checkbox-input visually-hidden" id="filter-color-white" name="filter-color-white" type="checkbox">
+                      <label class="checkbox-indicator" for="filter-color-white">Белый</label>
+                    </li>
+                    <li class="filter-list-item">
+                      <input class="filter-checkbox-input visually-hidden" id="filter-color-blue" name="filter-color-blue" type="checkbox" checked>
+                      <label class="checkbox-indicator" for="filter-color-blue">Синий</label>
+                    </li>
+                    <li class="filter-list-item">
+                      <input class="filter-checkbox-input visually-hidden" id="filter-color-red" name="filter-color-red" type="checkbox" checked>
+                      <label class="checkbox-indicator" for="filter-color-red">Красный</label>
+                    </li>
+                    <li class="filter-list-item">
+                      <input class="filter-checkbox-input visually-hidden" id="filter-color-pink" name="filter-color-pink" type="checkbox">
+                      <label class="checkbox-indicator" for="filter-color-pink">Розовый</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter-group filter-bluetooth">
+                  <legend class="filter-legend">Bluetooth</legend>
+                  <ul class="filter-list filter-bluetooth-list">
+                    <li class="filter-list-item">
+                      <input class="filter-radio-input visually-hidden" id="filter-bluetooth-true" type="radio" name="filter-bluetooth" checked>
+                      <label class="radio-indicator" for="filter-bluetooth-true">Есть</label>
+                    </li>
+                    <li class="filter-list-item">
+                      <input class="filter-radio-input visually-hidden" id="filter-bluetooth-false" type="radio" name="filter-bluetooth">
+                      <label class="radio-indicator" for="filter-bluetooth-false">Нет</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class="button filter-form-submit" type="submit">Показать</button>
+              </form>
+            </div>
           </section>
           <section class="sort">
               <h3>Сортировка:</h3>
@@ -203,7 +219,7 @@
             <li class="catalog-item">
               <p class="catalog-item-description">
                 <a href="">Непотопляемая селфи-палка</a>
-                <span>2 500 руб.</span>
+                <span>1 500 руб.</span>
               </p>
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               <div class="catalog-item-actions">
@@ -211,10 +227,10 @@
                 <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item catalog-item-new">
               <p class="catalog-item-description">
                 <a href="">Селфи-палка «Следуй за мной»</a>
-                <span>4 900 руб.</span>
+                <span>1 900 руб.</span>
               </p>
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <div class="catalog-item-actions">
@@ -278,7 +294,7 @@
               <a href="">Контакты</a>
             </li>
           </ul>
-          <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+          <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </div>
         <div class="footer-bottom">
           <ul class="socials-list">
