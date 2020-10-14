@@ -20,7 +20,7 @@
           <div class="user-nav-wrapper">
             <ul class="user-nav">
               <li class="user-nav-item">
-                <a href="" class="user-nav-link user-icon">Войти</a>
+                <a href="" class="user-nav-link user-nav-link-login user-icon">Войти</a>
               </li>
             </ul>
             <ul class="site-actions">
@@ -49,7 +49,7 @@
             </li>
           </ul>
         </div>
-        <div class="catalog-nav-wrapper catalog-nav-open">
+        <div class="catalog-nav-wrapper">
           <div class="catalog-nav-column">
             <ul class="catalog-nav">
               <li class="catalog-nav-item">
@@ -278,7 +278,7 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.</p>
           <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
-          <a class="button index-columns-button" href="">Напишите нам</a>
+          <a class="button js-feedback index-columns-button" href="">Напишите нам</a>
         </section>
       </div>
 
@@ -345,24 +345,24 @@
       </div>
     </footer>
 
-    <!-- <section class="modal modal-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <img src="img/map-big.jpg" width="994" height="593" alt="г. Москва, ул. Строителей, 15">
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
-    </section> -->
+    </section>
 
-    <!-- <section class="modal modal-feedback">
+    <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="#" class="feedback-form">
+      <form action="writeus.html" method="POST" class="feedback-form">
         <div class="feedback-form-item">
           <label class="feedback-form-label" for="feedback-form-name">Ваше имя:</label>
           <input class="feedback-form-input" type="text" id="feedback-form-name" name="feedback-form-name" placeholder="Имя Фамилия" required>
         </div>
         <div class="feedback-form-item">
           <label class="feedback-form-label" for="feedback-form-email">Ваш e-mail:</label>
-          <input class="feedback-form-input" type="email" id="feedback-form-email" name="feedback-form-email" placeholder="email@example.com">
+          <input class="feedback-form-input" type="email" id="feedback-form-email" name="feedback-form-email" placeholder="email@example.com" required>
         </div>
         <label class="feedback-form-label" for="feedback-form-text">Текст письма:</label>
         <textarea class="feedback-form-input feedback-form-text" id="feedback-form-text" name="feedback-form-text" placeholder="В свободной форме"></textarea>
@@ -371,6 +371,8 @@
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
-    </section> -->
+    </section>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
