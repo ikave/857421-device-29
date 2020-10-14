@@ -9,7 +9,7 @@
   <body>
     <header class="main-header container">
       <nav class="main-navigation">
-        <div class="main-navigation-row">
+        <div class="main-navigation-column">
           <a class="logo" href="index.html">
             <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
           </a>
@@ -17,13 +17,41 @@
             <input class="search-form-input" type="text" name="search" placeholder="Поиск по сайту">
             <button class="search-form-submit" type="submit">Найти</button>
           </form>
+          <div class="catalog-nav-wrapper">
+            <a href="" class="catalog-toggle">Каталог товаров</a>
+            <div class="catalog-nav-content">
+              <ul class="catalog-nav">
+                <li class="catalog-nav-item">
+                  <a href="">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-nav-item">
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="catalog-nav-item">
+                  <a href="">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="catalog-nav">
+                <li class="catalog-nav-item">
+                  <a href="">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-nav-item">
+                  <a href="">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="catalog-nav">
+                <li class="catalog-nav-item">
+                  <a href="">Квадрокоптер</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-navigation-column">
           <div class="user-nav-wrapper">
             <ul class="user-nav">
               <li class="user-nav-item">
-                <a href="" class="user-nav-link user-icon">Валентин Петухов</a>
-              </li>
-              <li class="user-nav-item">
-                <a href="" class="user-nav-link user-nav-link-logout">Выйти</a>
+                <a href="" class="user-nav-link user-nav-link-login user-icon">Войти</a>
               </li>
             </ul>
             <ul class="site-actions">
@@ -34,11 +62,6 @@
                 <a href="" class="site-actions-item-cart">Корзина</a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="main-navigation-row">
-          <div class="catalog-menu-wrapper">
-            <a href="" class="catalog-menu">Каталог товаров</a>
           </div>
           <ul class="site-nav">
             <li class="site-nav-item">
@@ -51,38 +74,6 @@
               <a href="">Контакты</a>
             </li>
           </ul>
-        </div>
-        <div class="catalog-nav-wrapper ">
-          <div class="catalog-nav-column">
-            <ul class="catalog-nav">
-              <li class="catalog-nav-item">
-                <a href="">Виртуальная реальность</a>
-              </li>
-              <li class="catalog-nav-item">
-                <a href="">Моноподы для селфи</a>
-              </li>
-              <li class="catalog-nav-item">
-                <a href="">Экшн-камеры</a>
-              </li>
-            </ul>
-          </div>
-          <div class="catalog-nav-column">
-            <ul class="catalog-nav">
-              <li class="catalog-nav-item">
-                <a href="">Фитнес-браслеты</a>
-              </li>
-              <li class="catalog-nav-item">
-                <a href="">Умные часы</a>
-              </li>
-            </ul>
-          </div>
-          <div class="catalog-nav-column">
-            <ul class="catalog-nav">
-              <li class="catalog-nav-item">
-                <a href="">Квадрокоптер</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
     </header>
