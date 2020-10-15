@@ -1068,7 +1068,8 @@ img {
   line-height: 28px;
 }
 
-.contacts img {
+.map-link {
+  display: block;
   margin-bottom: 68px;
 }
 
@@ -1151,7 +1152,6 @@ img {
 .socials-item:not(:last-child) {
   margin-right: 20px;
 }
-
 
 .socials-item-link {
   position: relative;
@@ -1394,6 +1394,9 @@ img {
   width: 100%;
   min-height: 167px;
   margin-bottom: 54px;
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 19px;
   resize: none;
 }
 
@@ -1403,6 +1406,15 @@ img {
   min-width: 200px;
 }
 
+.modal-map {
+  width: 960px;
+  height: 560px;
+  background-image: url('../img/map-big.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
 
 /* CATALOG */
 
@@ -1765,7 +1777,6 @@ img {
   color: var(--basic-black-light);
 }
 
-
 .catalog-item img {
   order: -1;
   margin-bottom: 30px;
@@ -1957,7 +1968,6 @@ img {
 .pagination-item:not(:nth-child(1)):not(:nth-child(4)):not(:nth-child(5)) {
   margin-right: 30px;
 }
-
 
 .pagination-item-prev {
   margin-right: auto;
