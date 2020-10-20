@@ -103,3 +103,50 @@ mapPopupClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   closePopup(mapPopup);
 });
+
+const sliderControls = document.querySelector('.slider-controls');
+const sliderList = document.querySelector('.slider-list');
+const sliderItems = document.querySelectorAll('.slider-item');
+
+sliderControls.addEventListener('click', function (evt) {
+  const sliderButtons = sliderControls.querySelectorAll('.slider-button');
+
+  for (let i = 0; i < sliderButtons.length; i++) {
+    if (evt.target === sliderButtons[i]) {
+
+      sliderList.style.transform = `translateX(-${sliderItems[i].offsetWidth * [i]}px)`;
+    }
+  }
+
+  if (evt.target.classList.contains('slider-button')) {
+    for (let button of sliderButtons) {
+      button.classList.remove('slider-button-current');
+    }
+    evt.target.classList.add('slider-button-current');
+  }
+});
+
+const servicesControls = document.querySelector('.services-control');
+const servicesList = document.querySelector('.services-slider');
+const servicesItems = document.querySelectorAll('.services-slider-item');
+
+servicesControls.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  const servicesButtons = servicesControls.querySelectorAll('.services-control-button');
+
+  for (let i = 0; i < servicesButtons.length; i++) {
+    if (evt.target === servicesButtons[i]) {
+      for (let slide of servicesItems) {
+        slide.style.display = 'none';
+      }
+      servicesItems[i].style.display = 'block';
+    }
+  }
+
+  if (evt.target.classList.contains('services-control-button')) {
+    for (let button of servicesButtons) {
+      button.classList.remove('services-control-button-active');
+    }
+    evt.target.classList.add('services-control-button-active');
+  }
+});
