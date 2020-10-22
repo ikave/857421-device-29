@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -14,7 +14,8 @@
             <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
           </a>
           <form action="https://echo.htmlacademy.ru/" method="GET" class="search-form">
-            <input class="search-form-input" type="text" name="search" placeholder="Поиск по сайту">
+            <label class="visually-hidden" for="search-form-input">Поиск по сайту</label>
+            <input class="search-form-input" id="search-form-input" type="text" name="search" placeholder="Поиск по сайту">
             <button class="search-form-submit" type="submit">Найти</button>
           </form>
           <div class="catalog-nav-wrapper">
@@ -108,8 +109,8 @@
                 <fieldset class="filter-group filter-range">
                   <legend class="filter-legend">Стоимость</legend>
                   <div class="filter-range-line">
-                    <button class="filter-range-button filter-range-button-min"></button>
-                    <button class="filter-range-button filter-range-button-max"></button>
+                    <button class="filter-range-button filter-range-button-min" aria-label="Минимальная цена"></button>
+                    <button class="filter-range-button filter-range-button-max" aria-label="Максимальная цена"></button>
                   </div>
                   <ul class="filter-range-list">
                     <li class="filter-range-item">
@@ -198,7 +199,7 @@
               </p>
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="catalog-item-actions">
-                <button class="button" type="button">В корзину</button>
+                <a class="button" href="">В корзину</a>
                 <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
               </div>
             </li>
@@ -209,7 +210,7 @@
               </p>
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
               <div class="catalog-item-actions">
-                <button class="button" type="button">В корзину</button>
+                <a class="button" href="">В корзину</a>
                 <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
               </div>
             </li>
@@ -220,7 +221,7 @@
               </p>
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               <div class="catalog-item-actions">
-                <button class="button" type="button">В корзину</button>
+                <a class="button" href="">В корзину</a>
                 <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
               </div>
             </li>
@@ -231,7 +232,7 @@
               </p>
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <div class="catalog-item-actions">
-                <button class="button" type="button">В корзину</button>
+                <a class="button" href="">В корзину</a>
                 <button class="catalog-item-compare" type="button">Добавить к сравнению</button>
               </div>
             </li>

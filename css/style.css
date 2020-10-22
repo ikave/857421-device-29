@@ -1,21 +1,21 @@
 /* Fonts */
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-style: normal;
-  src: local("gilroyextrabold"), local("Gilroy Extra Bold"),
-    url("../fonts/gilroyextrabold.woff2") format("woff2"),
-    url("../fonts/gilroyextrabold.woff") format("woff");
+  src: local('gilroyextrabold'), local('Gilroy Extra Bold'),
+    url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-style: normal;
-  src: local("gilroylight"), local("Gilroy Light"),
-    url("../fonts/gilroylight.woff2") format("woff2"),
-    url("../fonts/gilroylight.woff") format("woff");
+  src: local('gilroylight'), local('Gilroy Light'),
+    url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
   font-weight: 300;
   font-display: swap;
 }
@@ -25,8 +25,8 @@
   font-style: normal;
   font-weight: 300;
   src: local('Open Sans Light'), local('OpenSans-Light'),
-    url("../fonts/opensanslight.woff2") format('woff2'),
-    url("../fonts/opensanslight.woff") format('woff');
+    url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff');
   font-display: swap;
 }
 
@@ -35,8 +35,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans Light'), local('OpenSans-Light'),
-    url("../fonts/opensans.woff2") format('woff2'),
-    url("../fonts/opensans.woff") format('woff');
+    url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
   font-display: swap;
 }
 
@@ -62,8 +62,8 @@
   --invalid: #f6dada;
 
   /* Fonts */
-  --main-font: "Open Sans", Arial, Helvetica, sans-serif;
-  --second-font: "Gilroy", Arial, Helvetica, sans-serif;
+  --main-font: 'Open Sans', Arial, Helvetica, sans-serif;
+  --second-font: 'Gilroy', Arial, Helvetica, sans-serif;
 }
 
 /* Global */
@@ -135,6 +135,7 @@ img {
 .button {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding: 9px 43px;
   border: none;
   background-color: transparent;
@@ -150,7 +151,7 @@ img {
 }
 
 .button::before{
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   width: 100%;
@@ -236,7 +237,7 @@ img {
 }
 
 .search-form::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 16px;
   height: 16px;
@@ -334,7 +335,7 @@ img {
 }
 
 .user-icon::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 6px;
   left: 0;
@@ -377,7 +378,7 @@ img {
 
 .site-actions-item-compare::before,
 .site-actions-item-cart::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 6px;
   left: 0;
@@ -453,6 +454,7 @@ img {
 .catalog-toggle {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding-right: 38px;
   font-family: var(--second-font);
   font-weight: 800;
@@ -464,7 +466,7 @@ img {
 }
 
 .catalog-toggle::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 3px;
   right: 6px;
@@ -501,7 +503,7 @@ img {
 }
 
 .catalog-nav-content::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -60px;
@@ -559,7 +561,7 @@ img {
 }
 
 .promo-wrapper::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -591,7 +593,7 @@ img {
   display: grid;
   grid-template-columns: 600px 560px;
   grid-template-areas:
-    "photo content";
+    'photo content';
   grid-template-rows: auto;
 }
 
@@ -614,7 +616,7 @@ img {
 }
 
 .slider-item-content::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 7px;
@@ -717,7 +719,7 @@ img {
 }
 
 .slider-button-current::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 6px;
@@ -762,7 +764,7 @@ img {
 }
 
 .categories-list a::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -772,7 +774,7 @@ img {
 }
 
 .categories-list a::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 80px;
   left: 80px;
@@ -837,7 +839,7 @@ img {
 }
 
 .services::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -869,7 +871,7 @@ img {
 }
 
 .services-control::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -890,7 +892,7 @@ img {
 }
 
 .services-control-button::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
 }
@@ -950,7 +952,7 @@ img {
 }
 
 .services-slider-item::before {
-  content: "";
+  content: '';
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -1047,7 +1049,7 @@ img {
 }
 
 .about::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1092,7 +1094,7 @@ img {
 }
 
 .delivery-list-item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 11px;
   left: 0;
@@ -1113,7 +1115,7 @@ img {
 }
 
 .contacts::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1202,7 +1204,7 @@ img {
 }
 
 .footer-bottom::before {
-  content: "";
+  content: '';
   position: relative;
   display: block;
   top: 13px;
@@ -1248,7 +1250,7 @@ img {
 }
 
 .socials-item-link::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1407,7 +1409,7 @@ img {
 }
 
 .modal-close::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 18px;
   left: 18px;
@@ -1464,7 +1466,8 @@ img {
   outline: none;
 }
 
-.feedback-form-input:invalid {
+.feedback-form-input:invalid,
+.input-invalid {
   background-color: var(--invalid);
   border: 1px solid var(--invalid);
 }
@@ -1535,7 +1538,7 @@ img {
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 12px;
   right: -30px;
@@ -1595,7 +1598,7 @@ img {
 
 .filter-title-wrapper::before,
 .filter-form-wrapper::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -9999px;
@@ -1640,7 +1643,7 @@ img {
 }
 
 .filter-legend::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1658,7 +1661,7 @@ img {
 }
 
 .filter-range-line::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   width: 100%;
@@ -1668,7 +1671,7 @@ img {
 }
 
 .filter-range-line::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   width: 60%;
@@ -1689,7 +1692,7 @@ img {
 }
 
 .filter-range-button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1745,7 +1748,7 @@ img {
 }
 
 .checkbox-indicator::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1790,7 +1793,7 @@ img {
 }
 
 .radio-indicator::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1823,9 +1826,9 @@ img {
 .catalog {
   display: grid;
   grid-template-areas:
-    "filter sort"
-    "filter catalog"
-    "filter pagination";
+    'filter sort'
+    'filter catalog'
+    'filter pagination';
   grid-template-columns: 328px 2fr;
   grid-template-rows: auto 1fr auto;
 }
@@ -1863,7 +1866,7 @@ img {
 }
 
 .catalog-item-new::before {
-  content: "new";
+  content: 'new';
   position: absolute;
   display: flex;
   align-items: center;
@@ -1923,7 +1926,7 @@ img {
 }
 
 .catalog-item-actions::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1976,7 +1979,7 @@ img {
 }
 
 .sort::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: -9999px;
@@ -2008,6 +2011,8 @@ img {
 }
 
 .sort-list {
+  max-width: 500px;
+  flex-wrap: wrap;
   margin-left: 74px;
 }
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
@@ -14,7 +14,8 @@
             <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
           </a>
           <form action="https://echo.htmlacademy.ru/" method="GET" class="search-form">
-            <input class="search-form-input" type="text" name="search" placeholder="Поиск по сайту">
+            <label class="visually-hidden" for="search-form-input">Поиск по сайту</label>
+            <input class="search-form-input" id="search-form-input" type="text" name="search" placeholder="Поиск по сайту">
             <button class="search-form-submit" type="submit">Найти</button>
           </form>
           <div class="catalog-nav-wrapper">
@@ -135,7 +136,7 @@
               <li class="slider-item">
                 <h3 class="visually-hidden">Квадрокоптер</h3>
                 <div class="slider-image-wrapper">
-                  <img class="slider-image" src="img/slider-3.png" height="334" alt="Квадрокоптер">
+                  <img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                 </div>
                 <div class="slider-item-content">
                   <p class="slider-item-tagline">Порхает как бабочка,<br> жалит как пчела!</p>
@@ -365,11 +366,11 @@
       <form action="writeus.html" method="POST" class="feedback-form">
         <div class="feedback-form-item">
           <label class="feedback-form-label" for="feedback-form-name">Ваше имя:</label>
-          <input class="feedback-form-input" type="text" id="feedback-form-name" name="feedback-form-name" placeholder="Имя Фамилия" required>
+          <input class="feedback-form-input" type="text" id="feedback-form-name" name="feedback-form-name" placeholder="Имя Фамилия">
         </div>
         <div class="feedback-form-item">
           <label class="feedback-form-label" for="feedback-form-email">Ваш e-mail:</label>
-          <input class="feedback-form-input" type="email" id="feedback-form-email" name="feedback-form-email" placeholder="email@example.com" required>
+          <input class="feedback-form-input" type="email" id="feedback-form-email" name="feedback-form-email" placeholder="email@example.com">
         </div>
         <label class="feedback-form-label" for="feedback-form-text">Текст письма:</label>
         <textarea class="feedback-form-input feedback-form-text" id="feedback-form-text" name="feedback-form-text" placeholder="В свободной форме"></textarea>
